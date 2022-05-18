@@ -16,7 +16,7 @@ var KTCreateAccount = (function () {
         (o = t.querySelector('[data-kt-stepper-action="submit"]')),
         (s = t.querySelector('[data-kt-stepper-action="next"]')),
         (r = new KTStepper(t)).on("kt.stepper.changed", function (e) {
-          4 === r.getCurrentStepIndex()
+          5 === r.getCurrentStepIndex()
             ? (o.classList.remove("d-none"),
               o.classList.add("d-inline-block"),
               s.classList.add("d-none"))

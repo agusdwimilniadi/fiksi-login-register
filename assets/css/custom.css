@@ -109,3 +109,6 @@
 .stepper.stepper-pills .stepper-item {
   flex-direction: column !important;
 }
+.stepper.stepper-pills .stepper-nav {
+  justify-content: space-between;
+}

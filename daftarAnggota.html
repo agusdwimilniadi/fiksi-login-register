@@ -37,6 +37,8 @@
     />
 
     <!--== themify-icons -->
+    \
+
     <link
       href="assets/css/themify-icons.css"
       rel="stylesheet"
@@ -113,11 +115,12 @@
                 class="img-fluid mb-5"
               />
               <h1 class="text-center">
-                Pendaftaran Operator Sekolah <br />
-                OPSI 2022
+                Pendaftaran Ketua Peserta
+                <br />
+                FIKSI 2022
               </h1>
               <h6 class="text-center mt-5">
-                Sudah punya akun? <a href="sign-in.html">Masuk disini</a>
+                Sudah punya akun? <a href="index.html">Masuk disini</a>
               </h6>
             </div>
             <div class="col-md-8 offset-md-2 text-center">
@@ -138,9 +141,9 @@
                     <!--end::Icon-->
                     <!--begin::Label-->
                     <div class="stepper-label">
-                      <h3 class="stepper-title">Validasi NPSN</h3>
+                      <h3 class="stepper-title">Validasi NISN</h3>
                       <div class="stepper-desc fw-bold">
-                        Cek ketersediaan NPSN Sekolah
+                        Cek ketersediaan NISN
                       </div>
                     </div>
                     <!--end::Label-->
@@ -158,9 +161,9 @@
                     <!--end::Icon-->
                     <!--begin::Label-->
                     <div class="stepper-label">
-                      <h3 class="stepper-title">Data Sekolah</h3>
+                      <h3 class="stepper-title">Data Diri</h3>
                       <div class="stepper-desc fw-bold">
-                        Masukkan data lengkap sekolah
+                        Masukkan data lengkap
                       </div>
                     </div>
                     <!--end::Label-->
@@ -178,15 +181,14 @@
                     <!--end::Icon-->
                     <!--begin::Label-->
                     <div class="stepper-label">
-                      <h3 class="stepper-title">Data Penanggung Jawab</h3>
-                      <div class="stepper-desc fw-bold">
-                        Data lengkap penanggung jawab sekolah
-                      </div>
+                      <h3 class="stepper-title">Data Tim</h3>
+                      <div class="stepper-desc fw-bold">Data Tim</div>
                     </div>
                     <!--end::Label-->
                   </div>
                   <!--end::Step 3-->
                   <!--begin::Step 4-->
+
                   <div class="stepper-item" data-kt-stepper-element="nav">
                     <!--begin::Line-->
                     <!--end::Line-->
@@ -246,11 +248,11 @@
                     <!--begin::Heading-->
                     <div class="pb-10 pb-lg-12">
                       <!--begin::Title-->
-                      <h2 class="fw-bolder text-dark">Cek NPSN</h2>
+                      <h2 class="fw-bolder text-dark">Cek NISN</h2>
                       <!--end::Title-->
                       <!--begin::Notice-->
                       <div class="text-muted fw-bold fs-6">
-                        Apabila anda tidak mengetahui NPSN sekolah silahkan ke
+                        Apabila anda tidak mengetahui NISN silahkan ke
                         <a
                           href="https://referensi.data.kemdikbud.go.id/index11.php"
                           class="link-primary fw-bolder"
@@ -264,7 +266,7 @@
                     <!--begin::Input group-->
                     <div class="fv-row mb-10">
                       <!--begin::Label-->
-                      <label class="form-label required">NPSN Sekolah</label>
+                      <label class="form-label required">NISN</label>
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
@@ -291,11 +293,11 @@
                     <!--begin::Heading-->
                     <div class="pb-10 pb-lg-15">
                       <!--begin::Title-->
-                      <h2 class="fw-bolder text-dark">Data Sekolah</h2>
+                      <h2 class="fw-bolder text-dark">Data Diri</h2>
                       <!--end::Title-->
                       <!--begin::Notice-->
                       <div class="text-muted fw-bold fs-6">
-                        Silahkan masukkan data sekolah anda dengan benar
+                        Masukkan data lengkap
                       </div>
                       <!--end::Notice-->
                     </div>
@@ -303,11 +305,11 @@
                     <!--begin::Input group-->
                     <div class="fv-row mb-10">
                       <!--begin::Label-->
-                      <label class="form-label required">Nama Sekolah</label>
+                      <label class="form-label required">Nama</label>
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
-                        name="nama_sekolah"
+                        name="nama"
                         class="form-control form-control-lg form-control-solid"
                         type="text"
                         placeholder=""
@@ -317,25 +319,11 @@
                     </div>
                     <div class="fv-row mb-10">
                       <!--begin::Label-->
-                      <label class="form-label required">Email Sekolah</label>
+                      <label class="form-label">KIP (Jika Ada)</label>
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
-                        name="email_sekolah"
-                        class="form-control form-control-lg form-control-solid"
-                        type="email"
-                        placeholder=""
-                        value=""
-                      />
-                      <!--end::Input-->
-                    </div>
-                    <div class="fv-row mb-10">
-                      <!--begin::Label-->
-                      <label class="form-label required">Telepon Sekolah</label>
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <input
-                        name="telp_sekolah"
+                        name="kip"
                         class="form-control form-control-lg form-control-solid"
                         type="text"
                         placeholder=""
@@ -345,31 +333,131 @@
                     </div>
                     <div class="fv-row mb-10">
                       <!--begin::Label-->
-                      <label class="form-label required">Jenis Sekolah</label>
+                      <label class="form-label required">NIK</label>
+                      <!--end::Label-->
+                      <!--begin::Input-->
+                      <input
+                        name="nik"
+                        class="form-control form-control-lg form-control-solid"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                      <!--end::Input-->
+                    </div>
+                    <div class="fv-row mb-10">
+                      <!--begin::Label-->
+                      <label class="form-label required">Jenis Kelamin</label>
                       <!--end::Label-->
                       <!--begin::Input-->
                       <select
-                        name="jenis_sekolah"
+                        name="jenis_kelamin"
                         class="form-select form-select-lg form-select-solid"
                         data-control="select2"
                         data-placeholder="Select..."
                         data-allow-clear="true"
                         data-hide-search="true"
-                        id="jenis_sekolah"
+                        id="jenis_kelamin"
                       >
-                        <option value="NEGERI" selected>Negeri</option>
-                        <option value="SWASTA">Swasta</option>
+                        <option value="L" selected>L</option>
+                        <option value="P">P</option>
                       </select>
 
                       <!--end::Input-->
                     </div>
                     <div class="fv-row mb-10">
                       <!--begin::Label-->
-                      <label class="form-label">Kelurahan</label>
+                      <label class="form-label required">Agama</label>
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
-                        name="kelurahan_sekolah"
+                        name="agama"
+                        class="form-control form-control-lg form-control-solid"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                      <!--end::Input-->
+                    </div>
+                    <div class="fv-row mb-10">
+                      <!--begin::Label-->
+                      <label class="form-label required">Tampat Lahir</label>
+                      <!--end::Label-->
+                      <!--begin::Input-->
+                      <input
+                        name="tempat_lahir"
+                        class="form-control form-control-lg form-control-solid"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                      <!--end::Input-->
+                    </div>
+                    <div class="fv-row mb-10">
+                      <!--begin::Label-->
+                      <label class="form-label required">Tanggal Lahir</label>
+                      <!--end::Label-->
+                      <!--begin::Input-->
+                      <input
+                        name="tempat_lahir"
+                        class="form-control form-control-lg form-control-solid"
+                        type="date"
+                        placeholder=""
+                        value=""
+                      />
+                      <!--end::Input-->
+                    </div>
+                    <div class="fv-row mb-10">
+                      <!--begin::Label-->
+                      <label class="form-label required"
+                        >Kontak (Utamakan WhatsApp)</label
+                      >
+                      <!--end::Label-->
+                      <!--begin::Input-->
+                      <input
+                        name="tempat_lahir"
+                        class="form-control form-control-lg form-control-solid"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                      <!--end::Input-->
+                    </div>
+                    <div class="fv-row mb-10">
+                      <!--begin::Label-->
+                      <label class="form-label required">Alamat Jalan</label>
+                      <!--end::Label-->
+                      <!--begin::Input-->
+                      <input
+                        name="alamat_jalan"
+                        class="form-control form-control-lg form-control-solid"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                      <!--end::Input-->
+                    </div>
+                    <div class="fv-row mb-10">
+                      <!--begin::Label-->
+                      <label class="form-label required">Nomor Rumah</label>
+                      <!--end::Label-->
+                      <!--begin::Input-->
+                      <input
+                        name="nomor_rumah"
+                        class="form-control form-control-lg form-control-solid"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                      <!--end::Input-->
+                    </div>
+                    <div class="fv-row mb-10">
+                      <!--begin::Label-->
+                      <label class="form-label required">RT/RW</label>
+                      <!--end::Label-->
+                      <!--begin::Input-->
+                      <input
+                        name="rt/rw"
                         class="form-control form-control-lg form-control-solid"
                         type="text"
                         placeholder=""
@@ -383,7 +471,7 @@
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
-                        name="kecamatan_sekolah"
+                        name="kecamatan"
                         class="form-control form-control-lg form-control-solid"
                         type="text"
                         placeholder=""
@@ -414,55 +502,11 @@
                     </div>
                     <div class="fv-row mb-10">
                       <!--begin::Label-->
-                      <label class="form-label">Jalan</label>
+                      <label class="form-label required">Kode Pos</label>
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
-                        name="jalan_sekolah"
-                        class="form-control form-control-lg form-control-solid"
-                        type="text"
-                        placeholder=""
-                        value=""
-                      />
-                      <!--end::Input-->
-                    </div>
-                    <div class="fv-row mb-10">
-                      <!--begin::Label-->
-                      <label class="form-label">Nomor Alamat Sekolah</label>
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <input
-                        name="nomor_sekolah"
-                        class="form-control form-control-lg form-control-solid"
-                        type="text"
-                        placeholder=""
-                        value=""
-                      />
-                      <!--end::Input-->
-                    </div>
-                    <div class="fv-row mb-10">
-                      <!--begin::Label-->
-                      <label class="form-label">RT/RW</label>
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <input
-                        name="rt_rw_sekolah"
-                        class="form-control form-control-lg form-control-solid"
-                        type="text"
-                        placeholder=""
-                        value=""
-                      />
-                      <!--end::Input-->
-                    </div>
-                    <div class="fv-row mb-10">
-                      <!--begin::Label-->
-                      <label class="form-label required"
-                        >Kode Pos Sekolah</label
-                      >
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <input
-                        name="kode_pos_sekolah"
+                        name="kode_pos"
                         class="form-control form-control-lg form-control-solid"
                         type="text"
                         placeholder=""
@@ -486,24 +530,23 @@
                     <!--begin::Heading-->
                     <div class="pb-10 pb-lg-12">
                       <!--begin::Title-->
-                      <h2 class="fw-bolder text-dark">Data Penanggung Jawab</h2>
+                      <h2 class="fw-bolder text-dark">Data Tim</h2>
                       <!--end::Title-->
                       <!--begin::Notice-->
-                      <div class="text-muted fw-bold fs-6">
-                        Silahkan masukkan data penanggungjawab sekolah dengan
-                        benar
-                      </div>
+                      <div class="text-muted fw-bold fs-6">Tim</div>
                       <!--end::Notice-->
                     </div>
                     <!--end::Heading-->
                     <!--begin::Input group-->
                     <div class="fv-row mb-10">
                       <!--begin::Label-->
-                      <label class="form-label required">Nama</label>
+                      <label class="form-label required"
+                        >Kode Referal Tim</label
+                      >
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
-                        name="nama_pj"
+                        name="referal"
                         class="form-control form-control-lg form-control-solid"
                         type="text"
                         placeholder=""
@@ -511,62 +554,7 @@
                       />
                       <!--end::Input-->
                     </div>
-                    <div class="fv-row mb-10">
-                      <!--begin::Label-->
-                      <label class="form-label required">NIK</label>
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <input
-                        name="nik_pj"
-                        class="form-control form-control-lg form-control-solid"
-                        type="text"
-                        placeholder=""
-                        value=""
-                      />
-                      <!--end::Input-->
-                    </div>
-                    <div class="fv-row mb-10">
-                      <!--begin::Label-->
-                      <label class="form-label">NUPTK</label>
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <input
-                        name="nuptk_pj"
-                        class="form-control form-control-lg form-control-solid"
-                        type="text"
-                        placeholder=""
-                        value=""
-                      />
-                      <!--end::Input-->
-                    </div>
-                    <div class="fv-row mb-10">
-                      <!--begin::Label-->
-                      <label class="form-label">NIP</label>
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <input
-                        name="nip_pj"
-                        class="form-control form-control-lg form-control-solid"
-                        type="text"
-                        placeholder=""
-                        value=""
-                      />
-                      <!--end::Input-->
-                    </div>
-                    <div class="fv-row mb-10">
-                      <!--begin::Label-->
-                      <label class="form-label required">Nomor Telepon</label>
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <input
-                        name="no_telpon_pj"
-                        class="form-control form-control-lg form-control-solid"
-                        type="text"
-                        placeholder=""
-                        value=""
-                      />
-                      <!--end::Input-->
-                    </div>
+
                     <!--end::Input group-->
                     <!--begin::Input group-->
 
@@ -613,7 +601,7 @@
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
-                        name="password_akun"
+                        name="kata_sandi"
                         class="form-control form-control-lg form-control-solid"
                         type="password"
                         placeholder=""
@@ -629,7 +617,7 @@
                       <!--end::Label-->
                       <!--begin::Input-->
                       <input
-                        name="ulangi_password_akun"
+                        name="ulangi_kata_sandi"
                         class="form-control form-control-lg form-control-solid"
                         type="password"
                         placeholder=""
@@ -652,7 +640,6 @@
                           Saya sudah memeriksa kembali sebelum mendaftar
                         </label>
                       </div>
-
                       <!--end::Input-->
                     </div>
                   </div>
@@ -673,7 +660,7 @@
                       <!--begin::Notice-->
                       <div class="text-muted fw-bold fs-6">
                         Silahkan masuk ke dashboard
-                        <a href="sign-in.html" class="link-primary fw-bolder"
+                        <a href="index.html" class="link-primary fw-bolder"
                           >disini</a
                         >.
                       </div>
